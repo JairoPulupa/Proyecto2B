@@ -8,7 +8,7 @@ while True:
     print("==================")
     print("Calculadora basica")
     print("==================")
-
+#Impreme en pantalla los comentarios que estan entre comillas 
     print("¿Bienvenido en que te puedo ayudar?")
     print("1.- Suma")
     print("2.- Resta")
@@ -17,7 +17,7 @@ while True:
     print("5.- Derivar")
     print("6.- Integrar")
     print("7.- Transformada de Laplace")
-
+#Creamos una variable opcion con entrada de datos desde el teclado donde segun el parametro que escoga y escriba me llevara a una sentencia condicional if
     opcion=int(input("Porfavor ingresa una opcion: "))
     if opcion==1:
         print("\nHas elegido suma\n")
@@ -67,12 +67,13 @@ while True:
                 ciclo += 1
         print("El resultado de la division es:",acum)
     elif opcion==5:
+        #Al haber hecho una entrada del # 5 desde el teclado este saldra una interfaz donde se colocara la funcion a derivar e integrar
         print("Porfavor escribe la funcion a derivar en la siguiente interfaz :D")
         def derivada():
             try:
                 x = symbols('x') #Declarar variable independiente
                 fun_escrita = funcion.get()
-                f = parse_expr(fun_escrita)
+                f = parse_expr(fun_escrita) #parse_expr es utilizado para convertir las funciones ingresadas por el usuario en expresiones de derivadas e integrales
                 derivada = diff(f,x)
                 etiqueta.configure(text=derivada)
             except:
