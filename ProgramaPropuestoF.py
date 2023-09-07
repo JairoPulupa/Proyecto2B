@@ -96,6 +96,7 @@ while True:
         button3.pack()
         ventana.mainloop()
     elif opcion==6:
+        #Al haber hecho una entrada del # 6 desde el teclado este saldra una interfaz donde se colocara la funcion a integrar
         print("Porfavor escribe la funcion a integrar en la siguiente interfaz :D")
         def integral():
             try:
@@ -124,6 +125,7 @@ while True:
         button3.pack()
         ventana.mainloop()
     elif opcion==7:
+        #Al haber hecho una entrada del # 7 desde el teclado este saldra una interfaz donde se colocara la funcion de para calcular su transformada
         print("Porfavor escribe la funcion de t en la siguiente interfaz :D")
 
         def calcular_transformada():
